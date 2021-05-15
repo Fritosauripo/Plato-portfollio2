@@ -1,5 +1,25 @@
-.cycle{
+.cycle {
     background-color: $prime;
     color: $text;
-    padding: 90px 10px;
+    padding: 90px 10px 10px;
+
+    &__pretitle {
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    &__text {
+        max-width: 625px;
+        margin: 0 auto;
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+    }
 }
