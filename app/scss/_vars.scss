@@ -1,0 +1,21 @@
+
+
+  
+  @mixin t-clamp($lines, $line-height) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+  
+    @if $line-height {
+      max-height: $line-height * $lines * 1px;
+    }
+  }
+
+  @mixin r ($width) {
+    @media only screen and (max-width: $width + 'px') {
+      @content;
+    }
+  }
+
+  ///320 540 768 1080
