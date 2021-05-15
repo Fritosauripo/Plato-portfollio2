@@ -1,5 +1,9 @@
 body {
     font-style: normal;
+    @include roboto(400);
+    font-size: 30px;
+    color: $prime;
+    background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -15,3 +19,32 @@ body {
     overflow: hidden;
 }
 
+.button {
+    display: block;
+    padding: 16px 0;
+    border-radius: 44px;
+    font-size: 22px;
+    @include roboto(400);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s ease;
+
+    &:focus {
+        background-color: $focus;
+    }
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:active {
+        background-color: $active;
+    }
+}
+
+.pretitle {
+    margin: 0 auto;
+    max-width: 860px;
+    text-align: center;
+    font-size: 58px;
+    line-height: 1.1;
+}

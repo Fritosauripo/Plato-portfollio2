@@ -1,0 +1,76 @@
+.header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/content/header-wave.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+        bottom: -135px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    &__wrapper {
+        padding: 215px 15px;
+        display: flex;
+        justify-content: start;
+    }
+
+    &__inner {
+        max-width: 680px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 97px;
+        line-height: 1.2;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        p {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__trial {
+        margin-right: 26px;
+        border: 1px solid $prime;
+        width: 240px;
+
+        &:focus {
+            color: $text;
+        }
+
+        &:hover {
+            color: $text;
+        }
+
+        &:active {
+            color: $text;
+        }
+    }
+
+    &__shop-now {
+        background-color: $prime;
+        width: 260px;
+        color: $text;
+    }
+}

@@ -1,0 +1,105 @@
+.reviews {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/content/wave.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+        bottom: -125px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/content/ball.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 288px;
+        height: 288px;
+        top: -25px;
+        left: 20px;
+        z-index: -1;
+    }
+
+    &__noncont-img {
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/content/leafleft.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 163px;
+            height: 178px;
+            right: 57px;
+            top: -32px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../images/content/leafleft2.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 163px;
+            height: 178px;
+            left: 52px;
+            top: 41%;
+            z-index: -1;
+        }
+    }
+
+    &__inner {
+        padding: 69px 0 338px;
+    }
+
+    &__pretitile {
+       
+        margin-bottom: 86px;
+    }
+
+    &__peoples {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    &__people {
+        max-width: 476px;
+        padding: 0 15px;
+    }
+
+    &__avatar {
+        margin-bottom: 31px;
+    }
+
+    &__comment {
+        margin-bottom: 17px;
+        p {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+    }
+
+    &__contact {
+        a {
+            display: block;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+}
