@@ -1,0 +1,23 @@
+.stat {
+    &__pretitle {
+        color: $text;
+        max-width: 962px;
+        margin-bottom: 71px;
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__number {
+        padding: 0 94px;
+        font-size: 98px;
+
+        &:not(:last-child) {
+            border-right: 1px solid $text;
+        }
+    }
+
+}

@@ -8,7 +8,7 @@
     &::after {
         content: "";
         position: absolute;
-        background-image: url(../images/content/header-wave.png);
+        background-image: url(../images/content/header-wave.svg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -53,7 +53,6 @@
     &__trial {
         margin-right: 26px;
         border: 1px solid $prime;
-        width: 240px;
 
         &:focus {
             color: $text;
@@ -70,7 +69,6 @@
 
     &__shop-now {
         background-color: $prime;
-        width: 260px;
         color: $text;
     }
 }

@@ -1,6 +1,18 @@
 .about{
     padding: 400px 0 386px;
+    position: relative;
 
+    &::before{
+        background-image: url('../images/content/wave-top.svg');
+        top: 0;
+        left: 50%;
+    }
+
+    &::after{
+        background-image: url('../../images/content/wave.svg');
+        bottom: 0;
+        left: 50%;
+    }
 
     &__title{
         text-align: center;
@@ -10,9 +22,72 @@
     }
 
     &__subtitle{
+        margin: 0 auto;
+        margin-bottom: 50px;
         text-align: center;
         font-size: 40px;
         max-width: 873px;
+    }
+
+    &__items{
+        display: block;
+        max-width: 1300px;
         margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+
+    &__link{
+        display: block;
+        overflow: hidden;
+    }
+
+    &__img{
+        transform: scale(1);
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+
+    &__content{
+        max-width: 570px;
+        padding: 0 30px;
+    }
+
+    &__link{
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    &__pretitle{
+        margin-bottom: 37px;
+        font-size: 58px;
+        line-height: 1.1;
+    }
+
+    &__text{
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
+    &__receip{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button{
+        margin-right: 46px;
+        background-color: $prime;
+        color: $text;
     }
 }

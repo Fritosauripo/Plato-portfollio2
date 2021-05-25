@@ -1,0 +1,26 @@
+.daily{
+    padding: 0 15px;
+
+    &__title{
+        max-width: 890px;
+        margin-bottom: 51px;
+    }
+
+    &__text{
+        max-width: 850px;
+        margin: 0 auto;
+        margin-bottom: 34px;
+
+        p{
+            margin-bottom: 17px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    }
+
+    &__button{
+        margin: 0 auto;
+        background-color: $accent;
+        color: $prime;
+    }
+}

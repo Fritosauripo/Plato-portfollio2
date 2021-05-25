@@ -1,0 +1,48 @@
+.capsules {
+    position: relative;
+    padding: 400px 15px 350px;
+
+    &::before{
+        background-image: url('../images/content/wave-top.svg');
+        top: -140px;
+        left: 50%;
+    }
+
+    &::after{
+        background-image: url('../../images/content/wave2.svg');
+        bottom: 0;
+        left: 50%;
+        height: 110px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        max-width: 561px;
+        padding: 0 15px
+    }
+
+    &__title{
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        margin-bottom: 38px;
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__button {
+        background-color: $prime;
+        color: $text;
+    }
+}

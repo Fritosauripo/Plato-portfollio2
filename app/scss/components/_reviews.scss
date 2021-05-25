@@ -4,18 +4,9 @@
     z-index: 2;
 
     &::after {
-        content: "";
-        position: absolute;
-        background-image: url("../images/content/wave.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 30vh;
+        background-image: url("../images/content/wave.svg");
         bottom: -125px;
         left: 50%;
-        transform: translateX(-50%);
-        z-index: -2;
     }
 
     &::before {
@@ -67,7 +58,7 @@
     }
 
     &__pretitile {
-       
+
         margin-bottom: 86px;
     }
 
@@ -89,6 +80,7 @@
 
     &__comment {
         margin-bottom: 17px;
+
         p {
             font-size: 22px;
             line-height: 1.4;
